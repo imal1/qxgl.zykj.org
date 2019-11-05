@@ -25,7 +25,7 @@ import IStudentAuthResult, {
   IStudent
 } from "./services/Auth/dto/IStudentAuthResult";
 import { getUrlSearch } from "./services/http";
-import { cloneDeep, get, endsWith } from "lodash-es";
+import { cloneDeep, get, endsWith, reverse } from "lodash-es";
 
 const uuidv1 = require('uuid/v1');
 const Option = Select.Option;
@@ -325,7 +325,7 @@ class App extends React.Component<any, IAppState> {
     let res = await CoursewareApi.getallPPT();
     if (res) {
       this.setState({
-        listData: res
+        listData: reverse(res)
       })
     }
   }
