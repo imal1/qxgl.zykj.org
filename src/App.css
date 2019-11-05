@@ -1,0 +1,35 @@
+.App {
+  padding: 16px;
+}
+.App .primary {
+  color: #1890ff;
+}
+.App .success {
+  color: #52c41a;
+}
+.App .error {
+  color: #f5222d;
+}
+.App .tips {
+  font-size: 12px;
+  color: #555;
+}
+.App .student-cards {
+  margin-top: 20px;
+}
+.App .student-card {
+  float: left;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: 1x solid #ccc;
+  padding: 16px;
+  background: #eff0f4;
+}
+.App .student-card .name {
+  font-size: 24px;
+}
+.App .student-card.active {
+  background: #4798f3;
+  color: #fff;
+}
