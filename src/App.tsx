@@ -165,7 +165,7 @@ class App extends React.Component<any, IAppState> {
         <div className="student-cards">
           {arr.map((a, index) => {
             return (
-              <Row type="flex" justify="space-between" key={index}>
+              <Row key={index} gutter={2}>
                 {a.map((s: IStudent) => {
                   return (
                     <Col span={4} key={s.id}>
