@@ -165,7 +165,7 @@ class App extends React.Component<any, IAppState> {
         <div className="student-cards">
           {arr.map((a, index) => {
             return (
-              <Row key={index} gutter={2}>
+              <Row key={index} gutter={[2, 2]}>
                 {a.map((s: IStudent) => {
                   return (
                     <Col span={4} key={s.id}>
